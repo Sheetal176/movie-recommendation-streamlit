@@ -56,7 +56,7 @@ st.markdown("""
         font-size: 0.85rem;
     }
     </style>
-""", unsafe_style=unsafe_allow_html=True)
+""", unsafe_allow_html=True)
 
 # ── Title & Intro ─────────────────────────────────────────────────────────
 st.title("🎬 AI Playground: Movie Recommendation System")

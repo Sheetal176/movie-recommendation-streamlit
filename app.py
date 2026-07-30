@@ -185,7 +185,7 @@ with tab_select:
         recs_df, _ = get_recommendations(selected_movie, top_n=num_recs)
         
         st.subheader("🍿 Recommended Movies")
-        if recs_df is not None and not recs_df.empty():
+        if recs_df is not None and not recs_df.empty:
             for idx, row in recs_df.iterrows():
                 col_title, col_bar = st.columns([2, 3])
                 with col_title:
@@ -214,7 +214,7 @@ with tab_search:
             st.warning("Please enter some keywords first!")
         else:
             custom_recs = get_custom_recommendations(custom_query, top_n=custom_top_n)
-            if custom_recs is not None and not custom_recs.empty():
+            if custom_recs is not None and not custom_recs.empty:
                 st.success(f"Top matches for: *\"{custom_query}\"*")
                 for idx, row in custom_recs.iterrows():
                     col_t, col_b = st.columns([2, 3])
